@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:TFGProximity.Core.ValueConverters;assembly=TFGProximity"
+		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+		prism:ViewModelLocator.AutowireViewModel="True" 
+		x:Class="TFGProximity.Core.Views.BeaconsListPage" 
+		Title="Beacons"
+		BackgroundColor="{Binding UserState, Converter={StaticResource userState}}">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+        	<local:UserStateToColourValueConverter x:Key="userState" />
+        	<local:BeaconVMToColourValueConverter x:Key="beaconRole" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+	<ListView x:Name="BeaconListView" 
+			ItemsSource="{Binding Beacons}"
+			BackgroundColor="{Binding UserState, Converter={StaticResource userState}}">
+	    <ListView.ItemTemplate>
+	      	<DataTemplate>
+				<ViewCell>
+					<ViewCell.View>
+						<StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+							<StackLayout Orientation="Horizontal" BackgroundColor="{Binding ., Converter={StaticResource beaconRole}}">
+								<Label Text="{Binding Major}" />
+								<Label Text="{Binding Minor}" />
+								<Label Text="{Binding Distance}" />
+								<Label Text="{Binding Role}" />
+							</StackLayout>
+						</StackLayout>
+					</ViewCell.View>
+				</ViewCell>
+	      	</DataTemplate>
+	    </ListView.ItemTemplate>
+  	</ListView>
+</ContentPage>

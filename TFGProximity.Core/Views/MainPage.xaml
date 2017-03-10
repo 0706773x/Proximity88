@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:TFGProximity.Core.ValueConverters;assembly=TFGProximity"
+		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" prism:ViewModelLocator.AutowireViewModel="True" 
+		x:Class="TFGProximity.Core.Views.MainPage"
+		Title="Store of the Future" >
+	<ContentPage.Resources>
+		<ResourceDictionary>
+        	<local:UserStateToTextValueConverter x:Key="userState" />
+        	<local:BeaconToTextValueConverter x:Key="beacon" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+	<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+		<StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+	        <Label Text="{Binding UserStateFromTo, Converter={StaticResource userState}}" />
+	        <Label Text="{Binding Beacon, Converter={StaticResource beacon}}" />
+	    </StackLayout>
+		<StackLayout Orientation="Horizontal" VerticalOptions="End">
+			<Button Text="Beacons" Command="{Binding ShowBeaconsCommand}" HorizontalOptions="CenterAndExpand" />
+		</StackLayout>
+	</StackLayout>
+</ContentPage>

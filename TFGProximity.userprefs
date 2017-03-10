@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{825B7652-F291-411D-87F4-E8D7244547D5}|Default">
+  <MonoDevelop.Ide.ItemProperties.TFGProximity.Droid PreferredExecutionTarget="Android.5&quot; KitKat (4.4) XXHDPI Phone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TFGProximity.Core\ViewModels\WelcomePageViewModel.cs">
+    <Files>
+      <File FileName="TFGProximity.Droid\MainActivity.cs" Line="5" Column="23" />
+      <File FileName="TFGProximity.Core\Services\BeaconDataService.cs" Line="21" Column="32" />
+      <File FileName="TFGProximity.Core\Models\TFGBeacon.cs" Line="7" Column="15" />
+      <File FileName="TFGProximity.Core\Models\IBeacon.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\Models\BeaconRegion.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ValueConverters\BeaconRoleToColourValueConverter.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ValueConverters\BeaconToTextValueConverter.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ValueConverters\BeaconVMToColourValueConverter.cs" Line="18" Column="14" />
+      <File FileName="TFGProximity.Core\ValueConverters\DistanceToColourValueConverter.cs" Line="2" Column="28" />
+      <File FileName="TFGProximity.Core\ValueConverters\UserStateToColourValueConverter.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ValueConverters\UserStateToTextValueConverter.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\Enums\BeaconProximityEnum.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\Enums\BeaconRoleEnum.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ViewModels\MainPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ViewModels\WebViewPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="TFGProximity.Core\ViewModels\WelcomePageViewModel.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
